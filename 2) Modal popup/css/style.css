@@ -1,0 +1,158 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.main div {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    float: left;
+}
+
+.main div button {
+    top: 500px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: none;
+    background-color:rgb(116, 203, 243);
+    float: left;
+    color: azure;
+}
+
+.main div button:hover {
+    background-color: rgb(37, 75, 85);
+    cursor: pointer;
+}
+
+#close {
+    color: white;
+    background-color: rgba(173, 59, 31, 0.863);
+    border-radius: 8px;
+    margin: none;
+    text-align: center;
+    padding: 8px;
+    box-shadow: none;
+}
+
+#close:hover {
+    background-color: rgb(250, 17, 0);
+    cursor: pointer;
+}
+
+#save {
+    color: white;
+    background-color: rgb(79, 134, 54);
+    border-radius: 8px;
+    margin: none;
+    text-align: center;
+    padding: 8px;
+    box-shadow: none;
+}
+
+#save:hover {
+    background-color: rgb(23, 170, 55);
+    cursor: pointer;
+}
+
+.container {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.9;
+    background: rgba(216, 199, 199, 0.973);
+    z-index: 40000;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.popup {
+    display: none;
+    top: 0;
+    min-width: 350px;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 40001;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    margin-top: 30px;
+    margin-left: 10%;
+    animation-name: fadeIn_popup;
+    animation-duration: 0.8s;
+}
+
+.popup-header {
+    width: 100%;
+    height: 70px;
+}
+
+.popup-header h3 {
+    text-decoration: none;
+    float: left;
+}
+
+.popup-header a {
+    text-decoration: none;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    color: rgb(190, 210, 223);
+}
+
+.popup-content {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.popup-footer {
+    width: 100%;
+    height: 50px;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 1px solid rgb(240, 224, 224);
+}
+
+.fotter button {
+    float: right;
+    margin-right: 10px;
+    margin-top: 18px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+    .popup {
+        width: 800px;
+        height: 300px;
+        margin-left: 20%;
+        margin-top: calc(50vh - 150px);
+    }
+    .popup-header {
+        width: 100%;
+        height: 80px;
+    }
+    .popup-header h3 {
+        line-height: 40px;
+        margin-right: 10px;
+    }
+    .popup-content {
+        width: 100%;
+        height: 170px;
+    }
+    .popup-footer {
+        width: 100%;
+        height: 70px;
+    }
+    .popup-footer button {
+        float: right;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+}
